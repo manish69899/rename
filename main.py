@@ -1,10 +1,15 @@
+import asyncio  # Nayi line: asyncio import karein
 from pyrogram import Client
 from config import Config
-from keep_alive import keep_alive  # Nayi line add ki hai
+from keep_alive import keep_alive
 
 if __name__ == "__main__":
     # Render ke liye dummy web server background me start karna
     keep_alive()
+    
+    # Ye do lines ERROR FIX karne ke liye hain:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     
     # Plugins dictionary use karke hum folder bata rahe hain
     app = Client(
