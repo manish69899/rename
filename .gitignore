@@ -1,0 +1,20 @@
+# Security (GitHub par .env upload nahi hona chahiye)
+.env
+
+# Pyrogram Session Files (Aapka login data upload nahi hona chahiye)
+*.session
+*.session-journal
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Downloads Folder (Local downloaded files server par push na hon)
+downloads/
+
+
+txt.txt
+ModularRenamer.session
